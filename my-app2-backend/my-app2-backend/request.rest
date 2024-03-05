@@ -1,0 +1,99 @@
+// Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Pa Mada",
+    "email": "pamada@fisikaku.ac.id",
+    "nim": "123456789",
+    "password": "fisika123",
+    "confPassword": "fisika123",
+    "role": "admin"
+}
+
+###
+// get All users
+GET http://localhost:5000/users
+
+###
+// get Single users
+GET http://localhost:5000/users/2109601e-b000-41bf-91e6-b6bb0716ed04
+
+###
+// update a user
+PATCH http://localhost:5000/users/2109601e-b000-41bf-91e6-b6bb0716ed04
+Content-Type: application/json
+
+{
+    "name": "Herman 2 Updated",
+    "email": "herman@umeng.ac.id",
+    "password": "hahas",
+    "confPassword": "nono",
+    "role": "user"
+}
+
+###
+// delete a user
+DELETE http://localhost:5000/users/1940a8f8-98ea-42dd-b2e0-ea891cbdc755
+
+###
+// Login a user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "omen@fisikaku.ac.id",
+    "password": "fisika123"
+}
+
+###
+// Login Session
+GET http://localhost:5000/me
+
+###
+// LogOut
+DELETE http://localhost:5000/logout
+
+###
+// get All products
+GET http://localhost:5000/products
+
+###
+// get All products List
+GET http://localhost:5000/products/list
+
+###
+// get single products
+GET http://localhost:5000/products/3c3d55ec-fd0c-49aa-b19f-2fd41af2346a
+
+###
+// Create a product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "alat berat",
+    "price": 6
+}
+
+###
+// Updated a product
+PATCH http://localhost:5000/products/8a308653-cebe-4c9c-9af7-130f61170ffa
+Content-Type: application/json
+
+{
+    "name": "alat berat updated",
+    "price": 7
+}
+
+###
+// Deleted a product
+DELETE http://localhost:5000/products/8a308653-cebe-4c9c-9af7-130f61170ffa
+
+###
+// get jadwal by lab
+GET http://localhost:5000/jadwal/modeling
+
+###
+// get all jadwal
+GET http://localhost:5000/jadwal
