@@ -1,0 +1,46 @@
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+      position: relative;
+    }    
+  
+    .main-content {
+      display: none;
+    }
+  
+    .main-content.show {
+      display: block;
+    }
+  
+    .section.is-hidden-mobile {
+      display: none;
+    }
+  
+    .section.is-visible {
+      display: block;
+    }
+  }
+
+  /* CSS untuk layar laptop/komputer */
+@media only screen and (min-width: 768px) {
+    .menu-label {
+      font-size: 16px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+    }
+  
+    .menu-list a {
+      font-size: 14px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+    }
+  }
+  
+  /* CSS untuk layar mobile */
+  @media only screen and (max-width: 767px) {
+    .menu-label {
+      font-size: 14px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+    }
+  
+    .menu-list a {
+      font-size: 12px; /* Sesuaikan ukuran teks dengan preferensi Anda */
+    }
+  }
+  
+  

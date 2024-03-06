@@ -1,0 +1,14 @@
+{
+  "title": "Selamat Datang di Website Lab Fisika UIN Bandung",
+  "text": "Saat ini Departemen Fisika mempunyai 10 Laboratorium antara lain Lab Fisika Teori, Lab Biofisika, dan Lab Fisika Terapan, dll. Klik About untuk selengkapnya",
+  "button": [
+    {
+      "title": "Login",
+      "color": "#eb3480"
+    },
+    {
+      "title": "About",
+      "color": "#fff"
+    }
+  ]
+}
